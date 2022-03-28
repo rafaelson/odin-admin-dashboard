@@ -3,6 +3,7 @@ body,
   min-height: 100vh;
   margin: 0;
 }
+
 .container {
   display: grid;
   /*grid-template-columns: minmax(125px, 1fr) 5fr;*/
@@ -10,7 +11,7 @@ body,
 }
 
 .sidebar {
-  background-color: blue;
+  background-color: #1992d4;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -19,20 +20,36 @@ body,
 .dash-logo,
 .menu-btn {
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   color: #ffffff;
   margin-left: 15px;
   display: flex;
+}
+
+.dash-logo {
+  font-size: 25px;
+  margin-top: 10px;
   gap: 10px;
 }
 
+.logo {
+  width: 30px;
+}
+
 .menu-btn {
+  font-size: 20px;
   gap: 15px;
 }
 
+.menu-1,
+.menu-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .header-content {
-  background-color: black;
+  background-color: white;
 }
 
 .svg-icon {
