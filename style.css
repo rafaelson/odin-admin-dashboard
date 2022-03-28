@@ -1,0 +1,41 @@
+body,
+.container {
+  min-height: 100vh;
+  margin: 0;
+}
+.container {
+  display: grid;
+  /*grid-template-columns: minmax(125px, 1fr) 5fr;*/
+  grid-template-columns: 1fr 5fr;
+}
+
+.sidebar {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.dash-logo,
+.menu-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-left: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.menu-btn {
+  gap: 15px;
+}
+
+.header-content {
+  background-color: black;
+}
+
+.svg-icon {
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(190deg)
+    brightness(108%) contrast(100%);
+}
