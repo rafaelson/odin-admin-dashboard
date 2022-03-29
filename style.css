@@ -23,11 +23,12 @@ body,
   font-weight: 500;
   color: #ffffff;
   margin-left: 15px;
+  margin-right: 15px;
   display: flex;
 }
 
 .dash-logo {
-  font-size: 25px;
+  font-size: 1.6rem;
   margin-top: 10px;
   gap: 10px;
 }
@@ -37,7 +38,7 @@ body,
 }
 
 .menu-btn {
-  font-size: 20px;
+  font-size: 1.25rem;
   gap: 15px;
 }
 
@@ -50,6 +51,63 @@ body,
 
 .header-content {
   background-color: white;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+
+.search-notifs {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  background-color: #ffffff;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 40px;
+}
+
+#bar {
+  width: 62%;
+  height: 40%;
+  border-radius: 100px;
+  border: 0;
+  background-color: #e2e8f0;
+}
+
+.photo-user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.photo {
+  height: 40px;
+  width: 40px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.greeting-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.content {
+  background-color: bisque;
 }
 
 .svg-icon {
