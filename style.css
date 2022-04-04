@@ -158,15 +158,30 @@ body,
 .content {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  background-color: #e2e8f0;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 30px;
+  gap: 30px;
 }
 
 .projects-container {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .projects {
   height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.project-info {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr;
 }
 
 .project-headers {
@@ -175,14 +190,40 @@ body,
   font-size: 1.3rem;
 }
 
-.card {
+.project-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #636363;
+}
+
+.headers-description {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.project-icons {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.card-project {
   background-color: #ffffff;
   height: 225px;
-  width: 340px;
-  border-style: solid;
+  /* width: 340px; */
+  width: auto;
   border-radius: 15px;
   display: grid;
   grid-template-columns: 1fr 40fr;
+  box-shadow: 3px 3px 5px 0px #636363;
+}
+
+.card-generic {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px 0px #636363;
+  height: 100%;
 }
 
 .yellow-stuff {
@@ -194,6 +235,14 @@ body,
 .announcements-trending {
   display: grid;
   grid-template-rows: 1fr 1fr;
+  gap: 5px;
+}
+
+.announcements,
+.trending {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .svg-icon {
