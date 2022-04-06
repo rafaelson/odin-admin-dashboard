@@ -4,6 +4,10 @@ body,
   margin: 0;
 }
 
+hr {
+  width: 100%;
+}
+
 .container {
   display: grid;
   /*grid-template-columns: minmax(125px, 1fr) 5fr;*/
@@ -224,12 +228,55 @@ body,
   border-radius: 15px;
   box-shadow: 3px 3px 5px 0px #636363;
   height: 100%;
+  padding: 20px;
+}
+
+.announcements-card {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.announcements-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #636363;
+}
+
+.announcements-header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .yellow-stuff {
   background-color: #f0b429;
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
+}
+
+.person-container {
+  display: flex;
+  gap: 15px;
+}
+
+.trending-username {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.trending-bio {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.trending-people {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
 }
 
 .announcements-trending {
