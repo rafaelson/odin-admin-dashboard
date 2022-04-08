@@ -10,13 +10,11 @@ hr {
 
 .container {
   display: grid;
-  /*grid-template-columns: minmax(125px, 1fr) 5fr;*/
   grid-template-columns: 1fr 5fr;
 }
 
 .sidebar {
   background-color: #1992d4;
-  /* background-color: #00b294; */
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -45,6 +43,11 @@ hr {
 .menu-btn {
   font-size: 1.25rem;
   gap: 15px;
+  transition: background-color 0.5s;
+}
+
+.menu-btn:hover {
+  background-color: #1571a3;
 }
 
 .menu-1,
@@ -157,6 +160,11 @@ hr {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #ffffff;
+  transition: background-color 0.5s;
+}
+
+.btn:hover {
+  background-color: #1571a3;
 }
 
 .content {
@@ -215,7 +223,6 @@ hr {
 .card-project {
   background-color: #ffffff;
   height: 225px;
-  /* width: 340px; */
   width: auto;
   border-radius: 15px;
   display: grid;
